@@ -30,11 +30,17 @@ Given a set of GPS coordiantes, location name, city/state information, and descr
 
 ## Class Diagram
 
-(Show data classes (DTOs), Activities, Fragments, MVVM, etc. I use ArgoUML to model classes in a diagram.  Other tools work as well.)
+![](2021-05-30-21-18-17.png)
 
 ## Class Diagram Description
 
-(One or two lines for each class to describe  use of interfaces, JME classes, Dalvik (Android) classes and resources, interfaces, etc. Don't worry about putting more than a few words to each class; this does not need to be thorough.)
+Main Activity: First screen the user sees, has options to search for attractions or bucketlist items
+BucketListDetail: Shows details of bucketlist items
+RetroFitInstance: Bootstrap class required for retrofit
+Attraction: Noun class that represents an attraction
+BucketListItem: Noun class that represents a bucket list item
+IBucketDAO: Interface for Room to persist Bucketlist data
+IAttractionDAO: Interface for Retrofit to find and parse attraction JSON data
 
 ## A Product Backlog
 
